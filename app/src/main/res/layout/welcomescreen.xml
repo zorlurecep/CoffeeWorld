@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".welcomescreen">
+
+    <ImageView
+        android:id="@+id/DarkBrownShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_darkbrown_background_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/LightBrownShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lightbrown_background_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DarkBrownShape" />
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="290dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="CoffeeWorld"
+        android:textSize="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coffeeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffeeicon" />
+
+    <TextView
+        android:id="@+id/WelcomeMessage"
+        android:layout_width="296dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Welcome to CoffeeWorld!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DarkBrownShape" />
+
+    <Button
+        android:id="@+id/GetStartedBtn"
+        android:layout_width="204dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="468dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="onGetStartedBtnClicked"
+        android:text="Get Started"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
