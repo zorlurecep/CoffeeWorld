@@ -1,3 +1,4 @@
+ 
  *CHANGES* 
  1)Added google map with pinned stores (fully operational) 
  2)Fixed a bug where the welcomescreen would appear upon restarting the app 
