@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="be.kuleuven.coffeeworld">
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -11,14 +14,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeWorld">
 
-        <activity android:name=".MapScreen"/>
-        <activity android:name=".CoffeeScreen" />
+        <activity
+            android:name=".MapScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoffeeScreen"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainScreen"
-            android:alwaysRetainTaskState="true"/>
+
+            android:screenOrientation="portrait" />
         <activity
             android:name=".welcomescreen"
-            android:noHistory="true" >
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

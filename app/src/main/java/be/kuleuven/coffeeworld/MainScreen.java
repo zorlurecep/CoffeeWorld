@@ -1,7 +1,8 @@
 package be.kuleuven.coffeeworld;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
